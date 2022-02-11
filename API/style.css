@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --ff-primary: 'Playfair Display', sans-serif;
+    --ff-secondary: 'Playfair Display', sans-serif;
+
+    --clr-light: white;
+    --clr-dark: pink;
+    --clr-accent: blue;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family:var(--ff-primary);
+    background: #222;
+    background-image:url('https://unsplash.it/1600/900?landscape');
+    font-size: 100%;
+}
+
+.card {
+    background: rgba(255,255,255,0.55);
+    color:black;
+    padding: 2em;
+    border-radius: 30px;
+    width:100%;
+    max-width:420px;
+    margin: 1em;
+}
+
+.search {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-btn:hover {
+    background: rgba(8, 12, 223, 0.25);
+}
+
+.search-btn {
+
+    margin: 0.5em;
+    border-radius: 65%;
+    border:none;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    background: rgba(255,255,255,0.55);
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.55);
+    color: royalblue;
+    font-family: inherit;
+    font-size: 90%;
+    font-weight: var(--fw-bold);
+    width:calc(100% - 60px);
+
+
+}
+
+.temp {
+    margin: 0;
+}
